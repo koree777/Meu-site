@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #0f0f0f, #342d38);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    backdrop-filter: blur(10px);
+    padding-top: 100px; 
+    background-size: 600% 600%;
+    animation: fundoAnimado 9s ease-in-out infinite alternate;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(50, 45, 58, 0.938);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+    margin: 0;
+}
+
+.img3 {
+    margin-top: 20px;
+}
+
+.img3 img {
+    border-radius: 10px;
+}
+
+.conteudo {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: gray
+}
+.conteudo p {
+    margin: 15px 0;
+}
+a{
+    text-decoration: none;
+    color:#ffffff;
+}
+nav{
+    display: flex;
+    gap:25px
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    margin: 40px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.hero h2 {
+  font-size: 48px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(0,170,255,0.1);
+}
+pre {
+  background: #0f1c30;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  overflow-x: auto;
+}
+code {
+  color: #00ff88;
+}
+@keyframes fundoAnimado {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+input {
+  padding: 10px;
+  width: 400px;
+}
+button {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: rgba(255,255,255,0.2);
+}
+.footer {
+  background: rgba(50, 45, 58, 0.938);
+  text-align: center;
+}
+
+.footer a {
+  color: #00aaff;
+  margin: 10px;
+}
