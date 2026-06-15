@@ -1,59 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Contato - Hidráulica São Gabriel</title>
-  <link rel="stylesheet" href="style2.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato</title>
+<link rel="stylesheet" href="style2.css">
 </head>
-
 <body>
 
-<header>
-  <div class="logo">
-    <h1>Hidráulica São Gabriel</h1>
-  </div>
+  <a href="index.html">Página Principal</a>
+<div class="container">
 
-  <nav>
-    <a href="index.html">Produtos</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="contato.html" class="active">Contato</a>
-    <a href="avaliações.html">Avaliações</a>
-  </nav>
-</header>
-
-<section class="contato">
-
-  <h2>Fale Conosco</h2>
-  <p class="sub">Entre em contato com a nossa equipe</p>
-
-  <div class="container-contato">
-
-    <!-- INFO -->
     <div class="info">
-      <h2>Informações</h2>
 
-      <h3><strong>Email:</strong><br>
-      hidraulicasaogabriel@terra.com.br</h3>
+        <h1>Fale Conosco</h1>
 
-      <h3><strong>Telefone:</strong><br>
-      (11) 97183-5156</h3>
+        <p>
+            Tem alguma dúvida, sugestão ou precisa de ajuda?
+            Nossa equipe está pronta para atender você.
+        </p>
 
-      <h3><strong>Atendimento:</strong><br>
-      Seg - Sex: 08h às 17h</h3>
+        <div class="contatos">
+
+            <div class="item">
+                <h3>📧 E-mail</h3>
+                <p>hidraulicasaogabriel@terra.com.br</p>
+            </div>
+
+            <div class="item">
+                <h3>📞 Telefone</h3>
+                <p>(11) 971835156</p>
+            </div>
+
+            <div class="item">
+                <h3>📍 Endereço</h3>
+                <p>Rua Emílio Barbosa-173 São Paulo</p>
+            </div>
+
+        </div>
+
     </div>
 
-    <!-- FORM -->
-    <form class="form">
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu email" required>
-      <textarea placeholder="Digite sua mensagem..." required></textarea>
+    <div class="formulario">
 
-      <button type="submit">Enviar Mensagem</button>
-    </form>
+        <h2>Envie uma mensagem</h2>
+        <p>Responderemos o mais rápido possível.</p>
 
-  </div>
+        <form>
 
-</section>
+            <div class="grupo">
+                <label>Nome</label>
+                <input type="text">
+            </div>
+
+            <div class="grupo">
+                <label>E-mail</label>
+                <input type="email">
+            </div>
+
+            <div class="grupo">
+                <label>Assunto</label>
+                <input type="text">
+            </div>
+
+            <div class="grupo">
+                <label>Mensagem</label>
+                <textarea></textarea>
+            </div>
+
+            <button type="submit">
+                Enviar Mensagem
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
 
 </body>
 </html>
