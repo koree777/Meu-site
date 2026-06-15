@@ -1,137 +1,442 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HSG Store</title>
-  <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidráulica São Gabriel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-  <h1>Hidráulica São Gabriel</h1>
- <a href="contato.html">Contato</a>
- <a href="sobre.html">Sobre</a>
- <a href="pagholder.html">Principal</a>
- <a href="avaliações.html">Avaliações</a>
-</header>
-
-<section class="products">
-  <h2>Promoções</h2>
-  <p class="subtitle">Produtos de alta qualidade e Entrega rapida para todo Brasil!</p>
-
-  <div class="grid">
-
-    <div class="card">
-      <div class="img">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_918703-MLB93937070178_102025-F.webp">
-        <span class="price">R$295.00</span>
-      </div>
-      <div class="info">
-        <h3>Caixa De Incendio</h3>
-        <p>90x60x17</p>
-        <button>Add to Cart</button>
-      </div>
+    <!-- Banner -->
+    <div class="promo-banner">
+        Frete grátis para compras acima de R$399
+        <a href="#">Saiba mais</a>
     </div>
 
-    <div class="card">
-      <div class="img">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_642581-MLA107386326705_022026-F.webp">
-        <span class="price">R$48.00</span>
-      </div>
-      <div class="info">
-        <h3>Registro 1148</h3>
-        <p>C25 1/2</p>
-        <button>Add to Cart</button>
-      </div>
-    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
 
-    <div class="card">
-      <div class="img">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_622752-MLA109376152818_042026-F.webp">
-        <span class="price">R$50,99.</span>
-      </div>
-      <div class="info">
-        <h3>Válvula Lavátorio</h3>
-        <p>7/8</p>
-        <button>Add to Cart</button>
-      </div>
-    </div>
- 
-    <div class="card">
-      <div class="img">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_975578-MLA105792573772_022026-F.webp">
-        <span class="price">R$150</span>
-      </div>
-      <div class="info">
-        <h3>Parafuso New-fix </h3>
-        <p>Kit Com 100 Unidades</p>
-        <button>Add to Cart</button>
-      </div>
-    </div>
+            <a href="#" class="header__logo">
+                Hidraulica São Gabriel
+            </a>
 
-    <div class="card">
-      <div class="img">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_730027-MLB79299543276_092024-F.webp">
-        <span class="price">R$65,43</span>
-      </div>
-      <div class="info">
-        <h3>Botoeira De Bomba </h3>
-        <p>Com Martelo</p>
-        <button>Add to Cart</button>
-      </div>
-    </div>
+            <nav>
+                <ul class="header__nav">
+                    <li><a href="#" class="active">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#">Novidades</a></li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
 
-    <div class="card">
-      <div class="img">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_703562-MLA100097681949_122025-F.webp">
-        <span class="price">R$39,90</span>
-      </div>
-      <div class="info">
-        <h3>Extensão Super Longa </h3>
-        <p>9 Cm 1\2</p>
-        <button>Add to Cart</button>
-      </div>
-    </div>
+            <div class="header__actions">
+                <button class="btn--icon">🔍</button>
+                <button class="btn--icon">❤️</button>
+                <button class="btn--icon" id="cart-toggle">
+                    🛒
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+            </div>
 
-    <div class="card">
-      <div class="img">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_708810-MLA107177222053_022026-F.webp">
-        <span class="price">R$80.00</span>
-      </div>
-      <div class="info">
-        <h3>Torneira Esfera</h3>
-        <p>3\4  Saida 1</p>
-        <button>Add to Cart</button>
-      </div>
-    </div>
+        </div>
+    </header>
 
-    <div class="card">
-      <div class="img">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_917122-MLA107583344575_022026-F.webp">
-        <span class="price">R$110.00</span>
-      </div>
-      <div class="info">
-        <h3>Kit Botoeira Bomba E Alarme</h3>
-        <p>Vision Fire</p>
-        <button>Add to Cart</button>
-      </div>
-    </div>
-    <div class="card">
-      <div class="img">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_605400-MLA106720594962_022026-F.webp">
-        <span class="price">R$24.66</span>
-      </div>
-      <div class="info">
-        <h3>Válvula Tanque</h3>
-        <p>Zamac</p>
-        <button>Add to Cart</button>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
 
+            <span class="hero__eyebrow">
+                Novos Produtos
+            </span>
 
-<script src="script.js"></script>
+            <h1 class="hero__title">
+                Produtos Para Sua Segurança E Para O Seu Dia A Dia
+            </h1>
+
+            <p class="hero__subtitle">
+                Descubra itens selecionados com qualidade premium,
+                design elegante e entrega rápida.
+            </p>
+
+            <div class="hero__actions">
+                <a href="#" class="btn btn--primary btn--lg">
+                    Comprar Agora
+                </a>
+
+                <a href="#" class="btn btn--ghost btn--lg">
+                    Ver Catálogo
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="section">
+        <div class="container">
+
+            <div class="section-header">
+                <div>
+                    <h2 class="section-header__title">
+                        Produtos em Destaque
+                    </h2>
+
+                    <p class="section-header__sub">
+                        Os mais vendidos da semana
+                    </p>
+                </div>
+
+                <div class="search-field">
+                    <span class="search-field__icon">🔍</span>
+                    <input type="text" placeholder="Buscar produtos...">
+                </div>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-pill active">Todos</button>
+                <button class="filter-pill">Torneiras</button>
+                <button class="filter-pill">Adaptadores</button>
+                <button class="filter-pill">Incêndio</button>
+                <button class="filter-pill">Promoções</button>
+            </div>
+
+            <div class="products-grid">
+
+                <!-- Produto 1 -->
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_879932-MLA106371853322_022026-F.webp" alt="Produto">
+
+                        <div class="product-card__badges">
+                            <span class="badge badge--new">
+                                Novo
+                            </span>
+                        </div>
+
+                        <button class="product-card__wishlist">
+                            ❤️
+                        </button>
+
+                    </div>
+
+                    <div class="product-card__body">
+
+                        <div class="product-card__category">
+                            Incêndio
+                        </div>
+
+                        <h3 class="product-card__name">
+                            Caixa De Incêndio 90x60x17 
+                        </h3>
+
+                        <div class="rating">
+                            <span class="rating__stars">★★★★★</span>
+                            <span class="rating__count">(124)</span>
+                        </div>
+
+                        <div class="product-card__footer">
+
+                            <div class="product-card__price">
+                                <span class="current">R$ 297,90</span>
+                            </div>
+
+                            <button class="btn btn--primary btn--sm add-to-cart"
+                                    data-name="Caixa De Incêndio 90x60x17"
+                                    data-price="297.90"
+                                    data-img="https://http2.mlstatic.com/D_NQ_NP_2X_879932-MLA106371853322_022026-F.webp">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_975578-MLA105792573772_022026-F.webp" alt="Produto">
+
+                        <div class="product-card__badges">
+                            <span class="badge badge--sale">
+                                -30%
+                            </span>
+                        </div>
+
+                        <button class="product-card__wishlist">
+                            ❤️
+                        </button>
+
+                    </div>
+
+                    <div class="product-card__body">
+
+                        <div class="product-card__category">
+                            Parafusos
+                        </div>
+
+                        <h3 class="product-card__name">
+                            Kit Parafuso New-Fix 14x2
+                        </h3>
+
+                        <div class="rating">
+                            <span class="rating__stars">★★★★☆</span>
+                            <span class="rating__count">(89)</span>
+                        </div>
+
+                        <div class="product-card__footer">
+
+                            <div class="product-card__price">
+                                <span class="current">R$ 149,90</span>
+                                <span class="original">R$ 199,90</span>
+                            </div>
+
+                            <button class="btn btn--primary btn--sm add-to-cart"
+                                    data-name="Kit Parafuso New-Fix 14x2"
+                                    data-price="149.90"
+                                    data-img="https://http2.mlstatic.com/D_NQ_NP_2X_975578-MLA105792573772_022026-F.webp">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_672010-MLA107177072813_022026-F.webp" alt="Produto">
+
+                        <div class="product-card__badges">
+                            <span class="badge badge--success">
+                                Popular
+                            </span>
+                        </div>
+
+                        <button class="product-card__wishlist">
+                            ❤️
+                        </button>
+
+                    </div>
+
+                    <div class="product-card__body">
+
+                        <div class="product-card__category">
+                            Torneiras
+                        </div>
+
+                        <h3 class="product-card__name">
+                            Torneira Esfera 3\4 Saida 1
+                        </h3>
+
+                        <div class="rating">
+                            <span class="rating__stars">★★★★★</span>
+                            <span class="rating__count">(203)</span>
+                        </div>
+
+                        <div class="product-card__footer">
+
+                            <div class="product-card__price">
+                                <span class="current">R$ 80,00</span>
+                            </div>
+
+                            <button class="btn btn--primary btn--sm add-to-cart"
+                                    data-name="Torneira Esfera 3/4 Saida 1"
+                                    data-price="80.00"
+                                    data-img="https://http2.mlstatic.com/D_NQ_NP_2X_672010-MLA107177072813_022026-F.webp">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_667107-MLB54720710066_032023-F.webp" alt="Produto">
+
+                        <button class="product-card__wishlist">
+                            ❤️
+                        </button>
+
+                    </div>
+
+                    <div class="product-card__body">
+
+                        <div class="product-card__category">
+                            Incêndio
+                        </div>
+
+                        <h3 class="product-card__name">
+                            Mangueira De Hidrante 1 1\2 15 m Tipo 2 Certificada 
+                        </h3>
+
+                        <div class="rating">
+                            <span class="rating__stars">★★★★★</span>
+                            <span class="rating__count">(317)</span>
+                        </div>
+
+                        <div class="product-card__footer">
+
+                            <div class="product-card__price">
+                                <span class="current">R$ 441,20</span>
+                            </div>
+
+                            <button class="btn btn--primary btn--sm add-to-cart"
+                                    data-name="Mangueira De Hidrante 1 1/2 15m Tipo 2 Certificada"
+                                    data-price="441.20"
+                                    data-img="https://http2.mlstatic.com/D_NQ_NP_2X_667107-MLB54720710066_032023-F.webp">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section section--surface">
+        <div class="container text-center">
+
+            <h2 class="section-header__title">
+                Receba nossas novidades
+            </h2>
+
+            <p class="text-muted">
+                Promoções exclusivas e lançamentos direto no seu e-mail.
+            </p>
+
+            <br>
+
+            <div style="max-width:500px;margin:auto;">
+                <input
+                    type="email"
+                    placeholder="Digite seu e-mail"
+                    style="width:100%;padding:12px;border:1px solid #ddd;border-radius:8px;"
+                >
+                <br><br>
+
+                <button class="btn btn--primary">
+                    Inscrever-se
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer__grid">
+
+                <div>
+                    <div class="footer__logo">
+                        Hidráulica São Gabriel
+                    </div>
+
+                    <p class="footer__desc">
+                        Produtos selecionados para oferecer qualidade,
+                        elegância e praticidade para seu dia a dia.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer__heading">
+                        Loja
+                    </h4>
+
+                    <ul class="footer__links">
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Promoções</a></li>
+                        <li><a href="#">Novidades</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer__heading">
+                        Empresa
+                    </h4>
+
+                    <ul class="footer__links">
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer__heading">
+                        Suporte
+                    </h4>
+
+                    <ul class="footer__links">
+                        <li><a href="#">Ajuda</a></li>
+                        <li><a href="#">Trocas</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer__bottom">
+                <span>©️ 2026 Hidráulica São Gabriel. Todos os direitos reservados.</span>
+                <span>Desenvolvido com HTML + CSS</span>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Carrinho lateral -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-sidebar__header">
+            <h3>Seu carrinho</h3>
+            <button class="cart-close" id="cart-close">✕</button>
+        </div>
+
+        <div class="cart-sidebar__items" id="cart-items">
+            <!-- itens injetados via JS -->
+        </div>
+
+        <div class="cart-sidebar__footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total">R$ 0,00</span>
+            </div>
+            <button class="btn btn--primary" style="width:100%;">
+                Finalizar Compra
+            </button>
+        </div>
+    </aside>
+
+    <script src="cart.js"></script>
+
 </body>
 </html>
