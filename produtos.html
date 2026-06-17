@@ -8,6 +8,10 @@
 </head>
 <body>
    <a href="index.html">Página Principal</a>
+
+<button class="btn btn--ghost" id="theme-toggle">
+    🌙 Dark Mode
+</button>
      <!-- Produtos -->
     <section class="section">
         <div class="container">
@@ -23,6 +27,7 @@
                     </p>
                 </div>
 
+                
                 <div class="search-field">
                     <span class="search-field__icon">🔍</span>
                     <input type="text" placeholder="Buscar produtos...">
@@ -492,5 +497,25 @@
                 </div>
     
     
+                <script>
+const themeBtn = document.getElementById("theme-toggle");
+
+themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        themeBtn.innerHTML = "☀️ Light Mode";
+        localStorage.setItem("theme", "dark");
+    } else {
+        themeBtn.innerHTML = "🌙 Dark Mode";
+        localStorage.setItem("theme", "light");
+    }
+});
+
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    themeBtn.innerHTML = "☀️ Light Mode";
+}
+</script>
 </body>
 </html>
