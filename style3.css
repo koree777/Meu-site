@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: #f5f5f7;
+  color: #111;
+}
+
+/* HEADER */
+.header {
+  padding: 20px 40px;
+  background: rgb(99, 195, 233);
+  border-bottom: 1px solid #ddd;
+}
+
+/* SECTION */
+.products {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 32px;
+}
+
+.subtitle {
+  color: #666;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* GRID PERFEITO */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1100px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 800px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGEM COM PROPORÇÃO PERFEITA */
+.img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* 🔥 PADRÃO LOJA */
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* PREÇO */
+.price {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(45deg, #6a5cff, #a855f7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+/* INFO */
+.info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.info h3 {
+  font-size: 16px;
+}
+
+.info p {
+  color: #777;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+/* BOTÃO */
+button {
+  margin-top: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #3b82f6, #9333ea);
+  color: white;
+  cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #111;
+}
+/* CONTATO */
+
+.contato {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.contato h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contato .sub {
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.container-contato {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+/* INFO */
+.info {
+  background: #f5f5f5;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: left;
+}
+
+.info h3 {
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+}
+
+.form input,
+.form textarea {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.form button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #4facfe, #7b2ff7);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form button:hover {
+  transform: scale(1.05);
+}
+
+/* HEADER AJUSTE */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5aa9c4;
+  padding: 20px 10%;
+}
+
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+header nav a.active {
+  border-bottom: 2px solid black;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .container-contato {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+/* SOBRE */
+
+.sobre {
+  padding: 60px 10%;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* TEXTO */
+.sobre-texto {
+  flex: 1;
+}
+
+.sobre-texto h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.sobre-texto p {
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* DESTAQUES */
+.sobre-destaques {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.sobre-destaques div {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.sobre-destaques h3 {
+  color: #2a89dd;
+  font-size: 20px;
+}
+
+/* IMAGEM */
+.sobre-img {
+  flex: 1;
+}
+
+.sobre-img img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .sobre-container {
+    flex-direction: column;
+  }
+
+  .sobre-destaques {
+    flex-direction: column;
+  }
+}
+/* HERO APPLE STYLE */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  background: #f5f5f7;
+}
+
+/* TEXTO */
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero-text .sub {
+  font-size: 20px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.hero-text button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 30px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-text button:hover {
+  opacity: 0.8;
+}
+
+/* IMAGEM */
+.hero-img {
+  width: 50%;
+  height: 80%;
+  background: url("img/conexao.png") no-repeat center;
+  background-size: contain;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+  }
+}
+.container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    min-height:100vh;
+    padding:0 10%;
+    background:#f5f5f7;
+}
+
+.lado-imagem{
+    width:50%;
+    height:500px;
+    background:url("img/conexao.png") no-repeat center;
+    background-size:contain;
+}
+
+.lado-texto{
+    width:45%;
+}
+
+.lado-texto h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.destaque{
+    color:#2a89dd;
+}
+
+.lado-texto p{
+    font-size:20px;
+    color:#777;
+    margin-bottom:25px;
+}
+
+.btn-moderno{
+    display:inline-block;
+    padding:14px 28px;
+    background:black;
+    color:white;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn-moderno:hover{
+    opacity:.8;
+}
+
+@media(max-width:900px){
+    .container{
+        flex-direction:column;
+        text-align:center;
+        padding:50px 20px;
+    }
+
+    .lado-imagem{
+        width:100%;
+        height:300px;
+        order:2;
+    }
+
+    .lado-texto{
+        width:100%;
+    }
+}
