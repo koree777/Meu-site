@@ -33,13 +33,12 @@
             </nav>
 
             <div class="header__actions">
-                <button class="btn--icon">🔍</button>
-                <button class="btn--icon">❤️</button>
-                <button class="btn--icon" id="cart-toggle">
-                    🛒
-                    <span class="cart-count" id="cart-count">0</span>
-                </button>
-            </div>
+    <button class="btn--icon">🔍</button>
+    <button class="btn--icon">❤️</button>
+
+    <button class="btn--icon" id="theme-toggle">
+        🌙
+    </button>
 
         </div>
     </header>
@@ -493,6 +492,26 @@
     </aside>
 
     <script src="cart.js"></script>
+    <script>
+const themeBtn = document.getElementById("theme-toggle");
+
+themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        themeBtn.textContent = "☀️";
+        localStorage.setItem("theme","dark");
+    }else{
+        themeBtn.textContent = "🌙";
+        localStorage.setItem("theme","light");
+    }
+});
+
+if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark-mode");
+    themeBtn.textContent = "☀️";
+}
+</script>
 
 </body>
 </html>
