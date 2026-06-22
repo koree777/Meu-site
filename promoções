@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <a href="index.html">Página Principal</a>
+     <!-- Produtos -->
+    <section class="section">
+        <div class="container">
+
+            <div class="section-header">
+                <div>
+                    <h2 class="section-header__title">
+                        Promoções
+                    </h2>
+
+                    <p class="section-header__sub">
+                        Descontos de até 40%
+                    </p>
+                </div>
+
+                <div class="search-field">
+                    <span class="search-field__icon">🔍</span>
+                    <input type="text" placeholder="Buscar produtos...">
+                </div>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-pill active">Todos</button>
+                <button class="filter-pill">Torneiras</button>
+                <button class="filter-pill">Adaptadores</button>
+                <button class="filter-pill">Incêndio</button>
+                <button class="filter-pill">Promoções</button>
+            </div>
+
+            <div class="products-grid">
+
+                <!-- Produto 1 -->
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_933959-MLA112305750642_062026-F.webp" alt="Produto">
+
+                        <div class="product-card__badges">
+                            <span class="badge badge--new">
+                                Novo
+                            </span>
+                        </div>
+
+                        <button class="product-card__wishlist">
+                            ❤️
+                        </button>
+
+                    </div>
+
+                    <div class="product-card__body">
+
+                        <div class="product-card__category">
+                            Incêndio
+                        </div>
+
+                        <h3 class="product-card__name">
+                            Válvula Longa 11  cm
+                        </h3>
+
+                        <div class="rating">
+                            <span class="rating__stars">★★★★★</span>
+                            <span class="rating__count">(159)</span>
+                        </div>
+
+                        <div class="product-card__footer">
+
+                            <div class="product-card__price">
+                                <span class="current">R$ 45,90</span>
+                            </div>
+
+                            <button class="btn btn--primary btn--sm">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Produto 2-->
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_840429-MLB113456504373_062026-F.webp" alt="Produto">
+
+                        <div class="product-card__badges">
+                            <span class="badge badge--sale">
+                                -10%
+                            </span>
+                        </div>
+
+                        <button class="product-card__wishlist">
+                            ❤️
+                        </button>
+
+                    </div>
+
+                    <div class="product-card__body">
+
+                        <div class="product-card__category">
+                            Incêndio
+                        </div>
+
+                        <h3 class="product-card__name">
+                            Válvula Para Pia Americana 4 1/2 Metal
+                        </h3>
+
+                        <div class="rating">
+                            <span class="rating__stars">★★★★☆</span>
+                            <span class="rating__count">(149)</span>
+                        </div>
+
+                        <div class="product-card__footer">
+
+                            <div class="product-card__price">
+                                <span class="current">R$ 70,50</span>
+                                <span class="original">R$ 84,90</span>
+                            </div>
+
+                            <button class="btn btn--primary btn--sm">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Produto 3 -->
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_644680-MLA112450977872_062026-F.webp" alt="Produto">
+
+                        <div class="product-card__badges">
+                            <span class="badge badge--sale">
+                                -30%
+                            </span>
+                        </div>
+
+                        <button class="product-card__wishlist">
+                            ❤️
+                        </button>
+
+                    </div>
+
+                    <div class="product-card__body">
+
+                        <div class="product-card__category">
+                            Adaptadores
+                        </div>
+
+                        <h3 class="product-card__name">
+                            Kit 5 niples 1\5
+                        </h3>
+
+                        <div class="rating">
+                            <span class="rating__stars">★★★★★</span>
+                            <span class="rating__count">(101)</span>
+                        </div>
+
+                        <div class="product-card__footer">
+
+                            <div class="product-card__price">
+                                <span class="current">R$ 42,90</span>
+                                <span class="original">R$ 56,90</span>
+                            </div>
+
+                            <button class="btn btn--primary btn--sm">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_626445-MLB113618317325_062026-F.webp" alt="Produto">
+
+                        <div class="product-card__badges">
+                            <span class="badge badge--sale">
+                                -5%
+                            </span>
+                        </div>
+
+                        <button class="product-card__wishlist">
+                            ❤️
+                        </button>
+
+                    </div>
+
+                    <div class="product-card__body">
+
+                        <div class="product-card__category">
+                            Incêndio
+                        </div>
+
+                        <h3 class="product-card__name">
+                            Cesta Válvula Americana 4 1 \ 2 Leve Inox
+                        </h3>
+
+                        <div class="rating">
+                            <span class="rating__stars">★★★★☆</span>
+                            <span class="rating__count">(121)</span>
+                        </div>
+
+                        <div class="product-card__footer">
+
+                            <div class="product-card__price">
+                                <span class="current">R$ 27,99</span>
+                                <span class="original">R$ 29,90</span>
+                            </div>
+
+                            <button class="btn btn--primary btn--sm">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Produto 5 -->
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_798948-MLB113617844133_062026-F.webp" alt="Produto">
+
+                        <div class="product-card__badges">
+                            <span class="badge badge--sale">
+                                -10%
+                            </span>
+                        </div>
+
+                        <button class="product-card__wishlist">
+                            ❤️
+                        </button>
+
+                    </div>
+
+                    <div class="product-card__body">
+
+                        <div class="product-card__category">
+                            Adaptadores
+                        </div>
+
+                        <h3 class="product-card__name">
+                            Cesta Válvula Pia Americana Leve 3 1 \2 Inox
+                        </h3>
+
+                        <div class="rating">
+                            <span class="rating__stars">★★★★★</span>
+                            <span class="rating__count">(107)</span>
+                        </div>
+
+                        <div class="product-card__footer">
+
+                            <div class="product-card__price">
+                                <span class="current">R$ 19,90</span>
+                                <span class="original">R$ 25,90</span>
+                            </div>
+
+                            <button class="btn btn--primary btn--sm">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Produto 5 -->
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_862981-MLA105567144072_012026-F.webp" alt="Produto">
+
+                        <div class="product-card__badges">
+                            <span class="badge badge--sale">
+                                -10%
+                            </span>
+                        </div>
+
+                        <button class="product-card__wishlist">
+                            ❤️
+                        </button>
+
+                    </div>
+
+                    <div class="product-card__body">
+
+                        <div class="product-card__category">
+                            Adaptadores
+                        </div>
+
+                        <h3 class="product-card__name">
+                            Registro Pressão 1400 3/4 Am
+                        </h3>
+
+                        <div class="rating">
+                            <span class="rating__stars">★★★★★</span>
+                            <span class="rating__count">(99)</span>
+                        </div>
+
+                        <div class="product-card__footer">
+
+                            <div class="product-card__price">
+                                <span class="current">R$ 32,15</span>
+                                <span class="original">R$ 48,90</span>
+                            </div>
+
+                            <button class="btn btn--primary btn--sm">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                              <!-- Produto 5 -->
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_650721-MLB112303860518_062026-F.webp" alt="Produto">
+
+                        <div class="product-card__badges">
+                            <span class="badge badge--sale">
+                                -25%
+                            </span>
+                        </div>
+
+                        <button class="product-card__wishlist">
+                            ❤️
+                        </button>
+
+                    </div>
+
+                    <div class="product-card__body">
+
+                        <div class="product-card__category">
+                            Adaptadores
+                        </div>
+
+                        <h3 class="product-card__name">
+                            botoeira De Alarme De Incêndio Com Martelo
+                        </h3>
+
+                        <div class="rating">
+                            <span class="rating__stars">★★★★★</span>
+                            <span class="rating__count">(93)</span>
+                        </div>
+
+                        <div class="product-card__footer">
+
+                            <div class="product-card__price">
+                                <span class="current">R$ 57,25</span>
+                                <span class="original">R$ 65,90</span>
+                            </div>
+
+                            <button class="btn btn--primary btn--sm">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                              <!-- Produto 7 -->
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_669173-MLA106363096206_022026-F.webp" alt="Produto">
+
+                        <div class="product-card__badges">
+                            <span class="badge badge--sale">
+                                -10%
+                            </span>
+                        </div>
+
+                        <button class="product-card__wishlist">
+                            ❤️
+                        </button>
+
+                    </div>
+
+                    <div class="product-card__body">
+
+                        <div class="product-card__category">
+                            Torneiras
+                        </div>
+
+                        <h3 class="product-card__name">
+                            Martelinho Com Corrente Para Botoeira
+                        </h3>
+
+                        <div class="rating">
+                            <span class="rating__stars">★★★★★</span>
+                            <span class="rating__count">(44)</span>
+                        </div>
+
+                        <div class="product-card__footer">
+
+                            <div class="product-card__price">
+                                <span class="current">R$ 24,25</span>
+                                <span class="original">R$ 33,90</span>
+                            </div>
+
+                            <button class="btn btn--primary btn--sm">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                             <!-- Produto 7 -->
+                <div class="product-card">
+
+                    <div class="product-card__image">
+
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_964387-MLA107386561805_022026-F.webp" alt="Produto">
+
+                        <div class="product-card__badges">
+                            <span class="badge badge--sale">
+                                -25%
+                            </span>
+                        </div>
+
+                        <button class="product-card__wishlist">
+                            ❤️
+                        </button>
+
+                    </div>
+
+                    <div class="product-card__body">
+
+                        <div class="product-card__category">
+                            Torneiras
+                        </div>
+
+                        <h3 class="product-card__name">
+                            Válvula Gofield 1 Metal Dn 25 Pn40 1 Via
+                        </h3>
+
+                        <div class="rating">
+                            <span class="rating__stars">★★★★★</span>
+                            <span class="rating__count">(25)</span>
+                        </div>
+
+                        <div class="product-card__footer">
+
+                            <div class="product-card__price">
+                                <span class="current">R$ 33,53</span>
+                                <span class="original">R$ 52,90</span>
+                            </div>
+
+                            <button class="btn btn--primary btn--sm">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+    
+    
+</body>
+</html>
